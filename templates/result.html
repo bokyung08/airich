@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>결과</title>
+</head>
+<body>
+    <h1>결과</h1>
+    <table>
+        <tr>
+            <th>사용자</th>
+            <th>프로그램 제목</th>
+            <th>일치도</th>
+        </tr>
+        {% for user, title, match_percentage in result %}
+        <tr>
+            <td>{{ user }}</td>
+            <td>{{ title }}</td>
+            <td>{{ match_percentage }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

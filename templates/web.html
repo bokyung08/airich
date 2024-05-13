@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>정보 입력</title>
+</head>
+<body>
+
+<h2>정보 입력</h2>
+
+<form action="/submit" method="post">
+  <label for="regionSelect">지역:</label>
+  <select id="regionSelect" name="region">
+    <option value="강남구">강남구</option>
+    <option value="동대문구">동대문구</option>
+    <option value="영등포구">영등포구</option>
+    <option value="강동구">강동구</option>
+    <option value="성동구">성동구</option>
+    <option value="광진구">광진구</option>
+    <option value="노원구">노원구</option>
+    <option value="양천구">양천구</option>
+    <option value="중량구">중량구</option>
+    <option value="강서구">강서구</option>
+    <option value="용산구">용산구</option>
+    <option value="송파구">송파구</option>
+    <option value="구로구">구로구</option>
+    <option value="강북구">강북구</option>
+    <option value="서대문구">서대문구</option>
+    <option value="관악구">관악구</option>
+    <option value="마포구">마포구</option>
+    <option value="종로구">종로구</option>
+    <option value="도봉구">도봉구</option>
+    <option value="동작구">동작구</option>
+    <option value="성북구">성북구</option>
+    <option value="중구">중구</option>
+    <option value="금천구">금천구</option>
+    <option value="은평구">은평구</option>
+    <option value="서초구">서초구</option>   
+  </select><br><br>
+
+  <label for="categorySelect">카테고리:</label>
+  <select id="categorySelect" name="category">
+    <option value="외로움">외로움</option>
+    <option value="주거">주거</option>
+    <option value="안전">안전</option>
+    <option value="경제/일자리">경제/일자리</option>
+    <option value="질병">질병</option>
+    <option value="기타">기타</option>
+  </select><br><br>
+
+  <label for="ageInput">나이:</label>
+  <input type="number" id="ageInput" name="age" min="20" max="80"><br><br>
+
+  <label for="genderSelect">성별:</label>
+  <select id="genderSelect" name="gender">
+    <option value="남성">남성</option>
+    <option value="여성">여성</option>
+  </select><br><br>
+
+  <button type="submit">선택</button>
+</form>
+
+
+
+</body>
+</html>
